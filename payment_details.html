@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Payment details </title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="stylesheet" href="src/css/header_footer.css" type="text/css">
+		<link rel="stylesheet" href="src/css/payment_details.css" type="text/css">
+		<script src="src/js/payment_details.js"></script>
+	</head>
+	<body>
+		
+		<div class = "container">
+		<div class = "upperHead">
+			<img src = "src/img/LOGO.png" id = "eagleLogo"></img>
+			<div class="info">
+				<span class="siteName">Ceylon Airways</span>
+				<span class="login">
+					<a href = "Login.html">Login</a> | <a href = "registerCustomer.html">Register</a>
+				</span>
+			</div>
+		</div>
+		<div class="downHead">
+			<ul class = "nav_bar">
+				<a class = "active" href = "Home.html">Home</a>
+				<a href = "flight_schedule.html">Schedule</a>
+				<a href = "rules.html">Rules & Regulations</a>
+				<a href = "cargo.html">Cargo</a>
+				<a href = "career.html">Career</a>
+				<a href = "contactUs.html">Contact Us</a>
+				<input type = "text" placeholder = "Search Here....">
+			</ul>
+		</div>
+		</div>
+
+		<div class="clrfix"></div>
+		
+		
+		<div class="title">
+		<center><h1>...Payment Details...</h1>
+		
+		<img class="logo" src="src/img/logo1.jpg" alt="Logo of Ceylon Airlines" width="200px" height="200px"></center>
+		
+		</div>
+			<form method="post" action="src/php/payment.php">
+			
+			Passport ID : <br/>
+			<input type="text" name="passportid" required><br/><br/>
+			
+			Reservation No : <br/>
+			<input type="text" name="reservationNo" required><br/><br/>
+			
+			NIC : <br/>
+			<input type="text" name="nic" required><br/><br/>
+
+			Seat No : <br/>
+			<input type="text" name="seatno" required><br/><br/>
+			
+			First Name : <br/>
+			<input type="text" name="firstname" required><br/><br/>
+			
+			Last Name : <br/>
+			<input type="text" name="lastname" required><br/><br/>
+			
+			Payment Type : <br/>
+			<input type="radio" name="payment" checked>Online banking
+			<input type="radio" name="payment" checked>Airline reservation center<br/><br/>
+			
+			Mobile Number : <br/>
+			<input type="phone" name="mobile" pattern="[0-9]{10}" placeholder="1234567890" required><br/><br/>
+			
+			Email : <br/>
+			<input type="email" name="email" placeholder="abc@gmail.com" required><br/><br/>
+			
+			Address : <br>
+			<textarea name="addres" rows="8" cols="50" required></textarea><br/><br/>
+			
+			Reservation Date : <br/>
+			<input type="date" name="da" required><br/><br/>
+			
+			Acc Password : <br/>
+			<input type="password" id="pwd" pattern="(?=.+\d)(?=.+[a-z])(?=.+[A-Z]).{5,10}" required><br/><br/>
+			
+			Re-enter Acc password : <br/>
+			<input type="password" id="cnfrmpwd" required><br/><br/>
+			
+			Enter Amount : <br/>
+			<input type="text" name="amnt" required><br/><br/>
+			
+			Re-enter Amount : <br/>
+			<input type="text" name="amnt" required><br/><br/>
+			
+			
+			<br><input type="checkbox" id="checkBox" onclick="enableButton()">Accept privacy policy and terms<br/><br/>
+			
+			<input type="submit" id="submitBtn" value="Submit" disabled>
+
+			<input type="reset" id="resetBtn" value="Reset">
+
+		
+		
+		</form><br/><br/><br/><br/>
+		
+		<div class="clrfix"></div>	
+	
+	</div>
+	<div class="footer">
+		<div class="footer_sect_1">
+		
+		
+			<h3>Company</h3>
+		
+			<ul>
+
+				<li><a href="rules.html">Rules & Regulations</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="career.html">Career</a></li>
+
+			</ul>
+	
+		</div>
+	<div class="footer_sect_2">
+		
+		<h3>Support</h3>
+		
+		<ul>
+
+			<li><a href="contactUs.html">About Us</a></li>
+			<li><a href="#">Accessibilty</a></li>
+			<li><a href="contactUs.html">Customer Service</a></li>
+
+
+		</ul>
+
+	</div>
+	<div class="footer_sect_3">
+		
+		<h3>Services</h3>
+		
+		<ul>
+
+			<li><a href="flights.html">Flights</a></li>
+			<li><a href="cargo.html">Cargo</a></li>
+			<li><a href="flight_schedule.html">Schedule</a></li>
+
+
+		</ul>
+
+
+	</div>
+	<div class="footer_sect_4">	<h3>Contact Us</h3>
+		
+		<ul>
+
+			<li><a href="contactUs.html">Contact us</a></li>
+			
+
+
+		</ul>
+	<div class="social">
+				<center>
+					<a href="#"><img src="src/img/facebook.png"></a>
+					<a href="#"><img src="src/img/twitter.png"></a>
+					<a href="#"><img src="src/img/instagram.png"></a>
+				</center>
+			</div>
+
+	</div></div>
+	</body>
+</html>

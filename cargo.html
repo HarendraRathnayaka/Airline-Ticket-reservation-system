@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>
+	<title>CEYLON AIRWAYS</title>
+	<link rel="stylesheet" href="src/css/header_footer.css" type="text/css">
+	<link rel="stylesheet" href="src/css/cargo.css" type="text/css">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	
+	<script type = "text/javascript" src = "src/js/cargo.js"></script>
+	
+</head>
+
+<body >
+	<div class = "container">
+		<div class = "upperHead">
+			<img src = "src/img/LOGO.png" id = "eagleLogo"></img>
+			<div class="info">
+				<span class="siteName">Ceylon Airways</span>
+				<span class="login">
+					<a href = "Login.html">Login</a> | <a href = "registerCustomer.html">Register</a>
+				</span>
+			</div>
+		</div>
+		<div class="downHead">
+			<ul class = "nav_bar">
+				<a class = "active" href = "Home.html">Home</a>
+					<a href = "flight_schedule.html">Schedule</a>
+					<a href = "rules.html">Rules & Regulations</a>
+					<a href = "cargo.html">Cargo</a>
+					<a href = "career.html">Career</a>
+					<a href = "contactUs.html">Contact Us</a>
+				<input type = "text" placeholder = "Search Here....">
+			</ul>
+		</div>
+	</div>
+			
+	
+	<div class = "cargoTitle">
+		<h1>Airline Cargo</h1>
+	</div>
+	
+	<div class = "form-part">
+	<div class = "sub-container bg-img">
+		<h2>Cargo Registration Form</h2>
+		<div class = "form-conatainer ">
+			<form action = "src/php/cargo.php" method = "post">
+			<label>Sender Details</label>
+				<div class = "input-name">
+					<input type = "text" placeholder = "First Name" required class = "name" name = "senFirstName">
+					<span>
+					<input type = "text" placeholder = "Last Name" required class = "name" name = "senLastName">
+					</span>
+				</div>
+				<div class = "input-name">
+					<input type = "text" placeholder = "Address" required class = "name" id = "address" name = "senAddress">
+					<span class = "forjs" id = "sen-address-error"></span>
+				</div>
+				
+				<div class = "input-name">
+					<input type = "text" placeholder = "Email" required class = "name" name = "senEmail">
+					<span class = "forjs" id = "sen-email-error"></span>
+				</div>
+				<div class = "input-name">
+					<input type = "text" placeholder = "Phone No" required class = "name" name = "senPhone">
+				</div>
+
+				<!-- -->
+				
+				<br><label>Receiver Details</label>
+				<div class = "input-name">
+					<input type = "text" placeholder = "First Name" required class = "name" name = "recFirstName">
+					<span>
+					<input type = "text" placeholder = "Last Name" required class = "name" name = "recLastName">
+					</span>
+				</div>
+				<div class = "input-name">
+					<input type = "text" placeholder = "Address" required class = "name" name = "recAddress">
+					<span class = "forjs" id = "rec-address-error"></span>
+				</div>
+				<div class = "input-name">
+					<input type = "text" placeholder = "Email" required class = "name" name = "recEmail">
+					<span class = "forjs" id = "rec-email-error"></span>
+				</div>
+				<div class = "input-name">
+					<input type = "text" placeholder = "Phone No" required class = "name" name = "recPhone">
+				</div>
+				
+				<br><label>Cargo Type</label>
+				<div class = "input-name">
+					<select class = "cargo type">
+						<option>Select your cargo type</option>
+						<option>General Cargo</option>
+						<option>Special Cargo</option>
+					</select>
+				</div>
+				
+				<label>Post Method</label>
+				<br><div class = "input-name">
+					<p>
+					<input type = "radio" class = "radio-button" name = "postMethod" value = "s">
+					Speed Post
+					<input type = "radio" class = "radio-button" name = "postMethod" value = "n">
+					Normal Post
+					</p>
+				</div><br>
+				
+				<div class = "input-name">
+					<input type = "checkbox" required class = "check-button">
+					<label><b>I accept the terms & conditions</b></label>
+				</div>
+				
+				<button class = "confirmbutton" onclick = "myFunction()">Confirm</button>
+				<p id = "demo"></p>
+				
+			</form>
+		</div>
+	</div>
+	</div>
+	
+	
+	<!--Footer-->
+	<div class="footer">
+		<div class="footer_sect_1">
+		
+		
+			<h3>Company</h3>
+		
+			<ul>
+
+				<li><a href="rules.html">Rules & Regulations</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="career.html">Career</a></li>
+
+			</ul>
+	
+		</div>
+	<div class="footer_sect_2">
+		
+		<h3>Support</h3>
+		
+		<ul>
+
+			<li><a href="contactUs.html">About Us</a></li>
+			<li><a href="#">Accessibilty</a></li>
+			<li><a href="contactUs.html">Customer Service</a></li>
+
+
+		</ul>
+
+	</div>
+	<div class="footer_sect_3">
+		
+		<h3>Services</h3>
+		
+		<ul>
+
+			<li><a href="flights.html">Flights</a></li>
+			<li><a href="cargo.html">Cargo</a></li>
+			<li><a href="flight_schedule.html">Schedule</a></li>
+
+
+		</ul>
+
+
+	</div>
+	<div class="footer_sect_4">	<h3>Contact Us</h3>
+		
+		<ul>
+
+			<li><a href="contactUs.html">Contact us</a></li>
+			
+
+
+		</ul>
+	<div class="social">
+				<center>
+					<a href="#"><img src="src/img/facebook.png"></a>
+					<a href="#"><img src="src/img/twitter.png"></a>
+					<a href="#"><img src="src/img/instagram.png"></a>
+				</center>
+			</div>
+
+	</div></div>
+
+</body>
+</html>

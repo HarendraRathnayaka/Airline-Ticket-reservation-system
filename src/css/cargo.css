@@ -1,0 +1,90 @@
+.bg-img {
+  background-image: url(../img/formbackground.jpg);
+}
+
+/* Cargo Title */
+.cargoTitle {
+  border: 1px outset #a8c3f0;
+  text-align: center;
+  background-color: #a8c3f0;
+}
+
+.cargoTitle h1 {
+  color: #0c2d63;
+  font-family: Bahnschrift;
+  font-size: 50px;
+  text-decoration: bold;
+}
+
+/*FORM*/
+
+.form-part {
+  font-size: 14px;
+  background: white;
+  height: 1100px;
+}
+
+.sub-container {
+  width: 700px;
+  padding: 25px;
+  margin: 50px auto 0;
+  border-top: 5px solid blue;
+  box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sub-container h2 {
+  font-size: 35px;
+  line-height: 15px;
+  padding: 20px;
+  text-align: center;
+  font-family: Agency FB;
+}
+
+.input-name {
+  width: 90%;
+  position: relative;
+  margin: 20px auto;
+}
+
+.name {
+  width: 35%;
+  padding: 8px 0 8px 40px;
+}
+
+.input-name span {
+  margin-left: 35px;
+  width: 100%;
+  padding: 8px 0 8px 40px;
+}
+
+.confirmbutton {
+  background: #0066a2;
+  color: white;
+  border-style: outset;
+  border-color: #0066a2;
+  height: 30px;
+  width: 100px;
+  font: bold 15px arial;
+  text-shadow: none;
+}
+
+label {
+  font-family: Rockwell;
+  font-size: 20px;
+}
+
+.sub-container p {
+  font-family: Corbel;
+  font-size: 20px;
+}
+
+/*For JS*/
+
+.forjs {
+  position: absolute;
+  bottom: 4px;
+  right: -300px;
+  font-size: 17px;
+  color: red;
+  font-family: bold;
+}

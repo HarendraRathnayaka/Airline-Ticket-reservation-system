@@ -1,0 +1,52 @@
+form
+{
+	width:500px;
+	margin:auto;
+	padding:20px;
+	background:white;
+	font-size:14px;
+	font-family:'Poppins', sans-serif;
+	color:black;
+	border-style: groove;
+    border-color: black;
+	border-radius: 15px;
+	background-color: #E0FFFF;
+}
+
+.logo
+{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+input[type=submit],input[type=reset] {
+  width: 30%;
+  background-color: #00a6e7;
+  color: white;
+  padding: 12px 18px;
+  margin: 10px 0px 0px 60px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Georgia', sans-serif;
+}
+
+input[type=submit]:hover{
+	background-color: green;
+}
+
+input[type=reset]:hover{
+	background-color: #EE2A34;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.title {
+	margin-top: 70px;
+}

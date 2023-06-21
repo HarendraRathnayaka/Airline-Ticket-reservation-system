@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel = "stylesheet" href = "src/css/register.css">
+        <link rel="stylesheet" href="src/css/header_footer.css">
+        <script src="src/js/register.js"></script>
+    </head>
+    <body>
+        <div class = "containerRW">
+            <div class = "containerW">
+                <div class = "regHeading">
+                    <h2>Registration Form</h2>
+                </div>
+                <div class = "regForm">
+                    <form method="post" action="src/php/registerStaff.php">
+                        <fieldset>
+                            <legend>Personal Info</legend>
+                            <table cellspacing = "5" cellpadding = "5">
+                                <tr>
+                                    <td>
+                                        First Name<br>
+                                        <input type = "text" name="fname" required="">
+                                    </td>
+                                    <td>
+                                        Last Name <br>
+                                        <input type = "text" name="lname" required="">
+                                    </td>
+                                    <td>
+                                        Middle Name<br>
+                                        <input type = "text" name="mname">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan = "3">
+                                        E-mail <br>
+                                        <input type = "text" name="email" required="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan = "2">
+                                        Tel Number
+                                        <input type = "text" maxlength = 10 name="telno" required="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        DOB<br>
+                                        <input type = "date" name="dob" required=""> 
+                                    </td>
+                                    <td colspan = "2">
+                                        <span class = "gen">Gender</span>
+                                        <input type = "radio" name = "gen" class = "rButton">male
+                                        <input type = "radio" name = "gen" class = "rButton"> Female
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan = "3">
+                                        Address 
+                                        <textarea name="address" required=""></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Education</legend>
+                            <table cellspacing = "5" cellpadding = "5">
+                                <tr>
+                                    <td>Name of School</td>
+                                    <td colspan = "2"><input type = "text" name="school" required=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Name of University</td>
+                                    <td colspan = "2"><input type = "text" name="uni" required=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Education</td>
+                                    <td colspan = "2">
+                                        <select name="education">
+                                            <option></option>
+                                            <option>High School</option>
+                                            <option>Diploma</option>
+                                            <option>Under Graduate</option>
+                                            <option>Post Graduate</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Type of Degree</td>
+                                    <td colspan = "2">
+                                        <select name="degree">
+                                            <option>HND</option>
+                                            <option>BSC</option>
+                                            <option>PG Dip</option>
+                                            <option>MSC</option>
+                                            <option>Phd</option>
+                                        </select>
+                                    </td>
+                                </tr>                                
+                            </table>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Position</legend>
+                            <table cellspacing = "5" cellpadding = "5">
+                                <tr>
+                                    <td>Apply for </td>
+                                    <td>
+                                        <select name="position">
+                                            <option>Manager</option>
+                                            <option>Executive Officer</option>
+                                            <option>Financial Officer</option>
+                                            <option>Marketing Officer</option>
+                                        </select>
+                                    </td>
+                                    <td>Branch</td>
+                                    <td>
+                                        <select name="branch">
+                                            <option>Wellawatte</option>
+                                            <option>Galle</option>
+                                            <option>Kandy</option>
+                                            <option>Anuradhapura</option>
+                                            <option>Negombo</option>
+                                            <option>Jaffna</option>
+                                            <option>Batticaloa</option>
+                                            <option>Badulla</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <center>
+                        <table>
+                            <tr>
+                                <td colspan = "3">
+                                    <input type = "checkbox" class = "chcbox"id="chcbtn" onClick="enabtn()"> I accept all the terms and conditions
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan = "3">
+                                    <center>
+                                        <button type = "submit" class = "submit" id="subBtn" disabled>Submit</button>
+                                        <button type = "reset" class = "reset">Reset</button>
+                                    </center>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer_sect_1">
+                <h3>Company</h3>                
+                <ul>        
+                    <li><a href="#">Rules & Regulations</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Career</a></li>        
+                </ul>
+            
+            </div>
+            <div class="footer_sect_2">                
+                <h3>Support</h3>                
+                <ul>        
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Accessibilty</a></li>
+                    <li><a href="#">Customer Service</a></li> 
+                </ul>        
+            </div>
+            <div class="footer_sect_3">                
+                <h3>Services</h3>                
+                <ul>        
+                    <li><a href="#">Flights</a></li>
+                    <li><a href="#">Cargo</a></li>
+                    <li><a href="#">Schedule</a></li>     
+                </ul>
+        
+        
+            </div>
+            <div class="footer_sect_4">	<h3>Contact Us</h3>                
+                <ul>
+                    <li><a href="#">Contact us</a></li>           
+                </ul>
+                <div class="social">
+                    <center>
+                        <a href="#"><img src="src/img/facebook.png"></a>
+                        <a href="#"><img src="src/img/twitter.png"></a>
+                        <a href="#"><img src="src/img/instagram.png"></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

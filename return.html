@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Return flight schedule</title>
+	<link rel="stylesheet" href="src/css/header_footer.css" type="text/css">
+    <link rel="stylesheet" href="src/css/flight_schedule.css" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<script src="https://use.fontawesome.com/55f6362d7f.js"></script>
+	
+
+
+</head>
+<body>
+
+	<div class = "container">
+		<div class = "upperHead">
+			<img src = "src/img/LOGO.png" id = "eagleLogo"></img>
+			<div class="info">
+				<span class="siteName">Ceylon Airways</span>
+				<span class="login">
+					<a href = "Login.html">Login</a> | <a href = "registerCustomer.html">Register</a>
+				</span>
+			</div>
+		</div>
+		<div class="downHead">
+			<ul class = "nav_bar">
+				<a class = "active" href = "Home.html">Home</a>
+				<a href = "flight_schedule.html">Schedule</a>
+				<a href = "rules.html">Rules & Regulations</a>
+				<a href = "cargo.html">Cargo</a>
+				<a href = "career.html">Career</a>
+				<a href = "contactUs.html">Contact Us</a>
+				<input type = "text" placeholder = "Search Here....">
+			</ul>
+		</div>
+	</div>
+
+      
+         <!--flight schedule form-->
+		<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      
+     
+        <br>
+        <br>
+        <center>
+         <div id="flight_form">
+			<form method="post" action="src/php/return.php">
+            <h1>Flight Schedule</h1>
+			<a href="flight_schedule.html">
+				<a class = "navbut" href="flight_schedule.html" >One Way</a>
+				<a class = "navbut" href="#" target="_blank">Return</a>
+            <br>
+            <br>
+            <br>
+            <input type="text"placeholder="Where From ?"name="departure_return" required="">
+            <br>
+            <br>
+            <input type="text"placeholder="Where To?"name="arrival_return"required="">
+            <br>
+            <br>
+			When Are You Off?<br>
+            <input type="date"name="depDate_return" required="">
+            <br>
+            <br>
+            When Are You Back?<br>
+            <input type="date"name="arrivalDate_return" required="">
+            <br>
+            <br>
+
+            Passengers   
+            <br>
+            <select name="passengerNo_return">
+                <option>1 Adult</option>
+                <option>2 Adults</option>
+                <option>1 child</option>
+                <option>2 childs</option>
+            </select>
+
+            <br>
+            <input type="checkbox">Direct flights only
+            <br>
+            <br>
+            <input type="submit" value="Search Flights">
+			<button type = "reset" class = "reset">Reset</button>
+
+
+
+
+        </center>
+
+        
+        </form>
+    </div>
+    
+		<br><br><br><br>
+		<br><br><br><br>
+		<br><br><br><br>
+        
+   <!--flight schedule form close-->
+
+
+		<div class="footer">
+		<div class="footer_sect_1">
+		
+		
+			<h3>Company</h3>
+		
+			<ul>
+
+				<li><a href="rules.html">Rules & Regulations</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="career.html">Career</a></li>
+
+			</ul>
+	
+		</div>
+	<div class="footer_sect_2">
+		
+		<h3>Support</h3>
+		
+		<ul>
+
+			<li><a href="contactUs.html">About Us</a></li>
+			<li><a href="#">Accessibilty</a></li>
+			<li><a href="contactUs.html">Customer Service</a></li>
+
+
+		</ul>
+
+	</div>
+	<div class="footer_sect_3">
+		
+		<h3>Services</h3>
+		
+		<ul>
+
+			<li><a href="flights.html">Flights</a></li>
+			<li><a href="cargo.html">Cargo</a></li>
+			<li><a href="flight_schedule.html">Schedule</a></li>
+
+
+		</ul>
+
+
+	</div>
+	<div class="footer_sect_4">	<h3>Contact Us</h3>
+		
+		<ul>
+
+			<li><a href="contactUs.html">Contact us</a></li>
+			
+
+
+		</ul>
+	<div class="social">
+				<center>
+					<a href="#"><img src="src/img/facebook.png"></a>
+					<a href="#"><img src="src/img/twitter.png"></a>
+					<a href="#"><img src="src/img/instagram.png"></a>
+				</center>
+			</div>
+
+	</div></div>
+		
+		
+		</div>
+		
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+body{
+	font-family: 'Poppins', sans-serif;
+  background-image: url(..\img\flightschedule.jpeg);
+  background-size: 1360px;
+  overflow-x: hidden;
+}
+
+input[type=text],select,input[type=date]{
+    width :50%;
+    padding:12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit],#btn1,#btn2,button[type=reset]{
+    font-weight: bold;
+    width: 20%;
+    background-color: aquamarine;
+    color:black;
+    padding:14px 20px;
+    margin:8px 0;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#flight_form{
+    font-family: Georgia;
+    border-style: groove;
+    border-color: aquamarine;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 40%;
+    
+    
+}
+
+
+.navbut{
+	font-weight: bold;
+    width: 20%;
+    background-color: aquamarine;
+    color:black;
+    padding:14px 20px;
+    margin:8px 0;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+	text-decoration: none;
+}
+
+body{
+    background-image:url('src/img/may-bay-jpg.jpg');
+    background-size: cover;
+}
+
+
+

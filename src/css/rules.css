@@ -1,0 +1,41 @@
+/* Rules Title */
+	.rulesTitle{
+		border : 1px outset #a8c3f0;
+		text-align : center;
+		background-color : #a8c3f0;
+		
+	}
+	
+	.rulesTitle h1{
+		color : #0c2d63;
+		font-family : Bahnschrift;
+		font-size : 50px;
+		text-decoration : bold:
+	}
+	
+	
+/*Rules Informations*/
+
+	.information {
+		background-color : #ccd3e3;
+		position : relative;
+		height : 1000px;
+		padding : 10px;
+	}
+	
+	.information h1{
+		font-family : Cascadia Mono;
+		font-size : 37px;
+	}
+	
+	.information h3{
+		font-family : Lucida Handwriting;
+		font-size : 25px;
+		margin-left : 30px;
+	}
+	
+	.information ol{
+		font-family : Agency FB;
+		font-size : 22px;
+		margin-left : 40px;
+	}
